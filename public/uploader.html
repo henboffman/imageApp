@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+</head>
+
+<body>
+    website
+
+    <form action="api/image" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="text" placeholder="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="api/images" method="POST" enctype="multipart/form-data">
+        <input type="file" name="images" multiple>
+        <input type="text" placeholder="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/knockout.js"></script>
+
+   
+</body>
+
+</html>
